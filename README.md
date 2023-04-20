@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Goal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Write a React application that consumes any public API. The objective is to
+build an app that displays data from the API and supports pagination to display
+more data. Provided are some card/item designs to loosely base the mobile and
+desktop layouts off of.
 
-## Available Scripts
+#### Desktop Card Example
 
-In the project directory, you can run:
+![Desktop](card_desktop.png)
 
-### `npm start`
+#### Mobile Card Example
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Mobile](card_mobile.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Feel free to use a public api of your choice, but this might be a good place to
+start if you are stuck: https://github.com/public-apis/public-apis#music.
 
-### `npm test`
+## Expectations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Try to time-box the exercise at around ~ 3 hours. Keep this constraint in mind
+as you work, it's very possible that certain items don't get finished, try to
+save a few minutes to summarize your efforts in a readme or email if this is the
+case.
 
-### `npm run build`
+## Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Display data in a list using React
+- Should be able to paginate/infinite scroll to get at more results
+- Use provided images as an example for what an item in the list might look
+  like, but take liberties with the provided designs as they are not set in
+  stone
+- Improvise the layout of the page surrounding the cards and be as creative as
+  you like
+- Create both mobile and desktop layouts
+- The entire card should be clickable to go to another page (can click to
+  google.com and does not need to be a detail/show page associated with the API)
+- The card should also have a button within it that triggers a separate action
+  (can launch a browser confirm/alert)
+- Add your own flair for things like hover states and colors that are used
+- Provide documentation or instructions on how to run the application
+- Limit 3rd party libraries to only "must haves"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Evaluation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The qualities we're looking for are:
 
-### `npm run eject`
+- **Clarity**: is the code organized and structured well, is it easy to read and comprehend?
+- **Maintainability**: if it had to be updated / extended how easy would that be?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Questions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have questions about the instructions, please ask. We want you to be
+successful. If you have a question about how to handle something that wasn't
+specifically addressed, make a decision and feel free to call it out in your
+readme or email with your reasoning behind your decision. No right or wrong
+answers for these types of things.
