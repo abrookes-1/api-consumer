@@ -1,3 +1,11 @@
+# Starting The App
+TODO: test this procedure
+```
+cd react-project
+npm ci
+npm start
+```
+
 # Goal
 
 Write a React application that consumes any public API. The objective is to
