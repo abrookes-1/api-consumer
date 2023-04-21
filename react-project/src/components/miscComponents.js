@@ -1,8 +1,8 @@
 const TitleBar = props => {
   return(
-    <>
-      {props.title}
-    </>
+    <div className='titleBar'>
+      <b>{props.title}</b>
+    </div>
     );
   };
   

@@ -5,9 +5,11 @@ import { TitleBar } from './components/miscComponents';
 
 function App() {
   return (
-    <div className="App">
-      <TitleBar title="Irish Sheep Census"/>
-      <HomePage />
+    <div className='App'>
+      <div className='appContainer'>
+        <TitleBar title='Gemini Objects'/>
+        <HomePage />
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 import Card from './card';
 
 const formQueryUrl = page => {
-  const pageSize = 10;
+  const pageSize = 20;
   const url = 'https://api.arcsecond.io';
   const endpoint = '/archives/Gemini/data';
 
@@ -17,7 +17,7 @@ const formQueryUrl = page => {
   );
 };
 
-const HomePage = props => {
+const HomePage = () => {
   const [targets, setTargets] = useState([]);
   const [lastPage, setLastPage] = useState(0);
 
@@ -32,13 +32,13 @@ const HomePage = props => {
   }, []);
 
   return (
-    <>
+    <div className='mainPanel'>
     {
       targets.map(target => {return(
-        <Card content={{body: target.target_name}}/>
+        <Card content={target}/>
       )})
     }
-    </>
+    </div>
   );
 };
 
