@@ -1,13 +1,13 @@
 import './App.css';
 
-import Card from './components/card';
-import { TitleBar } from './components/pageComponents';
+import HomePage from './components/homePage';
+import { TitleBar } from './components/miscComponents';
 
 function App() {
   return (
     <div className="App">
       <TitleBar title="Irish Sheep Census"/>
-      <Card content={{body: "something"}}/>
+      <HomePage />
     </div>
   );
 }
