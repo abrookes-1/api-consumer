@@ -53,8 +53,9 @@ const HomePage = () => {
 
   const handleScroll = event => {
     // Infinite scroll
-    // if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
-    if (event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight) {
+
+    // In firefox, scrollHeight - scrollTop === clientHeight works; in chrome must use <1
+    if (event.target.scrollHeight - event.target.scrollTop - event.target.clientHeight < 1) {
       getMoreItems();
     }
   };
