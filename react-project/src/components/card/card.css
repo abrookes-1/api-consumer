@@ -1,7 +1,5 @@
 .card{
-  flex: 1 0 calc(33.33% - 100px);
-  /* max-width: calc(100%-50px); */
-  /* flex-basis: auto; */
+  flex: 1 0 calc(33.33% - 50px);
   color: white;
   margin: 10px;
   border-radius: 0.7rem;

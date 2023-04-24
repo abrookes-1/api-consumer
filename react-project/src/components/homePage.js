@@ -71,8 +71,8 @@ const HomePage = () => {
       </div>
       <div className='cardsPanel' onScroll={handleScroll}>
       {
-        astronauts.map(target => {return(
-          <Card content={target}/>
+        astronauts.map((target, index) => {return(
+          <Card content={target} key={index}/>
         )})
       }
       <div className='loadingMessage'>

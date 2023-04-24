@@ -42,19 +42,21 @@ const CompactCard = props => {
   return(
     <div className='compactCard'>
       <div className='detail'>
-        <table>  
-          <tr>
-            <td className='alignRight'><b>Age</b></td>
-            <td className='alignLeft'>{props.content.age}</td>
-          </tr>
-          <tr>
-            <td className='alignRight'><b>Nationality</b></td>
-            <td className='alignLeft'>{props.content.nationality}</td>
-          </tr>
-          <tr>
-            <td className='alignRight'><b>Agency</b></td>
-            <td className='alignLeft'>{props.content.agency.abbrev}</td>
-          </tr>
+        <table>
+          <tbody>
+            <tr>
+              <td className='alignRight'><b>Age</b></td>
+              <td className='alignLeft'>{props.content.age}</td>
+            </tr>
+            <tr>
+              <td className='alignRight'><b>Nationality</b></td>
+              <td className='alignLeft'>{props.content.nationality}</td>
+            </tr>
+            <tr>
+              <td className='alignRight'><b>Agency</b></td>
+              <td className='alignLeft'>{props.content.agency.abbrev}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
