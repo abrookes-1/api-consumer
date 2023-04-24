@@ -1,5 +1,5 @@
 # Starting The App
-TODO: test this procedure
+Tested with npm 9.6.4 and node 20.0.0
 ```
 cd react-project
 npm ci
