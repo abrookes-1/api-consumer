@@ -7,11 +7,7 @@ const Card = props => {
   const [expanded, setExpanded] = useState(false);
 
   const cardOnClick = event => {
-    // event.preventDefault();
-
-    if (event.target === event.currentTarget) {
-      setExpanded(!expanded);
-    }
+    setExpanded(!expanded);
   }
 
   return(
@@ -32,7 +28,7 @@ const Card = props => {
           <CompactCard content={props.content} />
         )
       }
-      <div className='cardButton'>
+      <div className='cardButton' onClick={e =>e.stopPropagation()}>
         <ActionButton
           text='Wiki'
           href={props.content.wiki}
@@ -55,6 +51,10 @@ const CompactCard = props => {
             <td className='alignRight'><b>Nationality</b></td>
             <td className='alignLeft'>{props.content.nationality}</td>
           </tr>
+          <tr>
+            <td className='alignRight'><b>Agency</b></td>
+            <td className='alignLeft'>{props.content.agency.abbrev}</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -64,7 +64,7 @@ const CompactCard = props => {
 const ExpandedCard = props => {
   return(
     <div className='expandedCard'>
-      <div className='detail' style={{overflow: 'scroll'}}>
+      <div className='detail'>
         {props.content.bio}
       </div>
     </div>
