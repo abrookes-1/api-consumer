@@ -1,0 +1,57 @@
+.card{
+  flex: 1 0 calc(33.33% - 100px);
+  max-width: calc(100%-50px);
+  flex-basis: auto;
+  color: white;
+  margin: 10px;
+  border-radius: 0.7rem;
+  background-color: #292a3b;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.card:hover{
+  box-shadow: 10px 5px 5px rgb(105, 105, 105);
+}
+
+.compactCard{
+  width: 300px;
+  height: 270px;
+}
+
+.expandedCard{
+  /* width: 90vw; */
+  height: 270px;
+}
+
+.radialBar{
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.detail{
+  height: calc(100% - 100px);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.detail ul {
+  list-style: none;
+  display: table;
+}
+
+.detail li{
+  display: table-row;
+}
+
+.cardButton{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}

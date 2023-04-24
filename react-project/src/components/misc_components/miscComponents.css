@@ -1,0 +1,19 @@
+.titleBar{
+  /* text-align: left; */
+  font-size: 30pt;
+  margin: 15px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.actionButton{
+  border-radius: 0.7rem;
+  height: 50px;
+  width: 100px;
+  border-color: white;
+  border-width: 5px;
+  background-color: #292a3b;
+  color: white;
+  font-size: 16pt;
+}

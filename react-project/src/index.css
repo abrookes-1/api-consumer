@@ -1,9 +1,7 @@
 body {
   font-family: 'Pathway Extreme', sans-serif;
+  font-size: 16pt;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,6 +9,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.alignRight{
+  text-align: right;
+}
+
+.alignLeft{
+  text-align: left;
 }
 
 .App{
@@ -22,7 +28,6 @@ code {
 
 .appContainer{
   margin: auto;
-  /* padding: 10px; */
   height: 97%;
   width: 97%;
   border-radius: 2rem;
@@ -31,56 +36,17 @@ code {
   grid-template-columns: 11em auto 20rem;
 }
 
-.mainPanel{
-  overflow-y: auto;
+.homePage{
+  height:100%;
 }
 
-.titleBar{
-  font-size: 30pt;
-}
-
-.card{
-  color: white;
-  margin: 10px;
-  border-radius: 0.7rem;
-  background-color: #292a3b;
-}
-
-.compactCard{
-  /* display: flex; */
-  /* flex: 1; */
-  height: 7rem!important;
-  position: relative;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.compactCard:hover{
-  box-shadow: none;
-}
-
-.expandedCard{
-  /* display: flex; */
-  /* flex: 0; */
-  height: 7rem!important;
-  border-radius: 0.7rem;
-  position: relative;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.radialBar{
-  /* flex: 0; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.detail{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+.cardsPanel{
+  overflow-y: scroll;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  height: 100%;
+  width: calc(100%-20px);
 }
