@@ -22,6 +22,11 @@ const HomePage = () => {
 
   // Function to query the api for astronauts and add their data to state
   const getMoreItems = () => {
+    // Prevent duplicate requests
+    if (isLoading) {
+      return;
+    }
+
     var queryParams = {
       'offset': astronauts.length,
       'limit': pageSize,
